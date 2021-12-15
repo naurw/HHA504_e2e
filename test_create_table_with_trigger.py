@@ -19,10 +19,10 @@ from sqlalchemy.orm import sessionmaker, validates
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.schema import MetaData
 
-MYSQL_HOSTNAME = '52.136.119.65'
-MYSQL_USER = 'dba'
-MYSQL_PASSWORD = 'ahi2021'
-MYSQL_DATABASE = 'newdatabase'
+MYSQL_HOSTNAME = 'INSERTHERE'
+MYSQL_USER = 'INSERTHERE'
+MYSQL_PASSWORD = 'INSERTHERE'
+MYSQL_DATABASE = 'INSERTHERE'
 
 connection_string = f'mysql+pymysql://{MYSQL_USER}:{MYSQL_PASSWORD}@{MYSQL_HOSTNAME}/{MYSQL_DATABASE}'
 engine = create_engine(connection_string)

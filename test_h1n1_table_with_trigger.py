@@ -21,10 +21,10 @@ from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.schema import MetaData, DDL
 
 
-MYSQL_HOSTNAME = '20.85.233.248' 
-MYSQL_USER = 'dba'
-MYSQL_PASSWORD = 'ahi2021'
-MYSQL_DATABASE = 'newdatabase'
+MYSQL_HOSTNAME = 'INSERTHERE' 
+MYSQL_USER = 'INSERTHERE'
+MYSQL_PASSWORD = 'INSERTHERE'
+MYSQL_DATABASE = 'INSERTHERE'
 
 connection_string = f'mysql+pymysql://{MYSQL_USER}:{MYSQL_PASSWORD}@{MYSQL_HOSTNAME}/{MYSQL_DATABASE}'
 engine = create_engine(connection_string)
