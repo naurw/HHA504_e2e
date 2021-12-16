@@ -33,8 +33,8 @@
 ### 6. sudo nano /etc/mysql/mysql.conf.d/mysql.cnf
 #### - bind address --> 0.0.0.0
 #### - server_id --> 1 
-#### - log_bin --> Remove # 
-#### - bin_log_do_db --> Remove # 
+#### - log_bin --> Remove hastag
+#### - bin_log_do_db --> Remove hastag
 #### - control + o to save changes 
 #### - control + x to exit 
 ### 7. sudo service mysql restart 
@@ -57,13 +57,13 @@
 
 
 # C) Create table into database in MySQL Instance via Python or SQL
-## **Method 1: Python** -> Please see attached .py file in this repo for an example 
+## **Method 1:** Python -> Please see attached .py file in this repo for an example 
 ### 1. Import packages 
 ### 2. Connect to MySQL instance 
 ### 3. Test connection by displaying tables 
 ### 4. Load .csv file 
 ### 5. Confirm table has been placed into designated database 
-## **Method 2: SQL** 
+## **Method 2:** SQL
 ### 1. mysql -u USER -p 
 ### 2. show databases; 
 ### 3. use INSERTNAME; 
@@ -72,13 +72,13 @@
 
 
 # D) Create a trigger in MySQL Instance via via Python or SQL
-## **Method 1: Pythonc** -> Please see attached .py file in this repo for an example 
+## **Method 1:** Python** -> Please see attached .py file in this repo for an example 
 ### 1. Import packages  
 ### 2. Connect to MySQL instance 
 ### 3. Test connection 
 ### 4. Create trigger 
 ### 5. Confirm trigger has been placed into designated database 
-## **Method 2:**
+## **Method 2:** SQL
 ### 1. mysql -u USER -p 
 ### 2. show databases; 
 ### 3. use INSERTNAME; 
