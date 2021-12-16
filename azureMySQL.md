@@ -98,12 +98,13 @@
 ### 1. Repeat Part A) but with separate credentials for new virtual machine 
 ### 2. Follow Part B) until step 8 
 ### 3. Log out of backup instance and log in to production/host instance 
-### 4. sudo mysqldump -- all databases> dump.sql
+### 4. sudo mysqldump DATABASE_NAME> dump.sql
 ### 5. ls 
 #### - Locate the present working directory of the host instance 
-#### - Copy directory 
-### 6. Log out of host instance and log in to the backup instance 
-### 7. scp dump.sql USERNAME@2ND IP ADDRESS:/home/USERNAME
-### 8. ls
+### 6. Log out of host instance and log in to the backup instance
+#### - Copy directory of backup instance
+### 7. Log out of backup instance and log in to host instance 
+### 8. scp dump.sql BACKUP_INSTANCE_NAME@IP_ADDRESS:COPIED_DIRECTORY 
+### 9. ls
 #### - Verify the copied dump.sql within backup instance 
 
