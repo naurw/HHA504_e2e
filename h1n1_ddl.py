@@ -42,14 +42,20 @@ Rerun meta.reflect & meta.tables.keys() to show that it is within the database:
 Base=declarative_base()
     
 h1n1trigger = DDL("""
-                  SELECT * FROM H1N1_Flu_Vaccines LIMIT 15;
-                  CREATE TRIGGER H1N1_concern_trigger BEFORE INSERT ON H1N1_Flu_Vaccines
-                  FOR EACH ROW BEGIN 
-                  IF NEW.alert >=3 THEN
-                  SIGNAL SQLSTATE '45000'
-                  SET MESSAGE_TEXT = 'H1N1 concern should be a numerical value between 0 and 3. Please try again.'
-                  ;END IF;
-                  END;
-                  """)
+delimiter $$
+
+CREATE TRIGGER H1N1_concern_trigger 
+BEFORE INSERT ON e2e.H1N1_Flu_Vaccines
+FOR EACH ROW
+BEGIN
+IF NEW.h1n1_concern >= 3 THEN
+SIGNAL SQLSTATE '45000'
+SET MESSAGE_TEXT = 'H1N1 concern should be a numerical value between 0 and 3. Please try again.';
+END IF;
+END; 
+
+$$
+""")
 
 event.listen(Base.metadata, 'after_create', h1n1trigger)
+
