@@ -16,7 +16,7 @@
 ### 8. Select Add Inbound Port Rule 
 ### 9. Designate port preferences and specifications for MySQL (port 3306)
 ### 10. Select Add
-## **OPTIONAL**: For changing IP configurations (static vs dynamic)
+## *OPTIONAL*: For changing IP configurations (static vs dynamic)
 ### 11. Navigate to current virtual machine(s) 
 ### 12: Select Networking and navigate to the link next to Network Interface 
 ### 13. Navigate to IP Configurations 
@@ -57,13 +57,13 @@
 
 
 # C) Create table into database in MySQL Instance via Python or SQL
-## **Method 1:** Python -> Please see attached .py file in this repo for an example 
+## *Method 1:* Python -> Please see attached .py file in this repo for an example 
 ### 1. Import packages 
 ### 2. Connect to MySQL instance 
 ### 3. Test connection by displaying tables 
 ### 4. Load .csv file 
 ### 5. Confirm table has been placed into designated database 
-## **Method 2:** SQL
+## *Method 2:* SQL
 ### 1. mysql -u USER -p 
 ### 2. show databases; 
 ### 3. use INSERTNAME; 
@@ -72,13 +72,13 @@
 
 
 # D) Create a trigger in MySQL Instance via via Python or SQL
-## **Method 1:** Python** -> Please see attached .py file in this repo for an example 
+## *Method 1:* Python** -> Please see attached .py file in this repo for an example 
 ### 1. Import packages  
 ### 2. Connect to MySQL instance 
 ### 3. Test connection 
 ### 4. Create trigger 
 ### 5. Confirm trigger has been placed into designated database 
-## **Method 2:** SQL
+## *Method 2:* SQL
 ### 1. mysql -u USER -p 
 ### 2. show databases; 
 ### 3. use INSERTNAME; 
