@@ -11,6 +11,7 @@ Created on Tue Dec 14 23:43:24 2021
 # - Instance can only run once; restart kernel if need be 
 # - This is a TESTING template for future iterations 
 # - Validation trigger works only within ORM levels; it doesn't reflect on the actual trigger list within the database
+# - Data that failed validation will appear as NULL on the table within MySQL 
 # =============================================================================
 import pandas as pd 
 import sqlalchemy

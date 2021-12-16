@@ -72,7 +72,7 @@
 
 
 # D) Create a trigger in MySQL Instance via via Python or SQL
-## *Method 1:* Python** -> Please see attached .py file in this repo for an example 
+## *Method 1:* Python -> Please see attached .py file in this repo for an example 
 ### 1. Import packages  
 ### 2. Connect to MySQL instance 
 ### 3. Test connection 
