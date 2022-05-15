@@ -1,7 +1,7 @@
 ## End to End (E2E) Deployment of Azure Instance(s) with MySQL
 ### **NOTE**: 
 ### All the bullets/steps are listed in *sequential* *order*.
-### Navigating key panels in Azure will be `highlighted` as such. 
+### Key parts will be `highlighted` as such. 
 > Codes will appear as such. 
 
 
